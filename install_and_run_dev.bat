@@ -3,10 +3,10 @@ echo ------------------------------------------------------
 echo Install Server dependencies
 echo ------------------------------------------------------
 
-cd .\ServerApp
+cd backend
 npm install|more
 
-cd ..\frontendApp
+cd ..\frontend
 echo ------------------------------------------------------
 echo Install Client dependencies
 echo ------------------------------------------------------
@@ -17,9 +17,9 @@ echo Rebuild frontend data and update server
 echo ------------------------------------------------------
 ng build|more
 
-cd ..\ServerApp
+cd ..\backend
 echo ------------------------------------------------------
 echo Start server
 echo ------------------------------------------------------
-node server.js
+npm run dev
 
