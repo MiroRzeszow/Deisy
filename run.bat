@@ -1,6 +1,6 @@
 @echo off
-cd .\ServerApp
+cd backend
 echo ------------------------------------------------------
-echo Start server
+echo Start Daisy server (backend)
 echo ------------------------------------------------------
-node server.js
+npm start
